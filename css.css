@@ -25,7 +25,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: url("imgs/3.1.jpg");
+    background: url("https://s3.bmp.ovh/imgs/2022/04/15/0d1effe11f773779.jpg");
     background-color: black;
     background-size: auto 100%;
     background-position: center;
@@ -88,7 +88,7 @@ body {
 
 #back{
     position: absolute;
-    background: url("imgs/background.png");
+    background: url("https://s3.bmp.ovh/imgs/2022/04/15/5dbd44b776533748.png");
     background-color: black;
     background-size: 100% auto;
     background-position: center;
