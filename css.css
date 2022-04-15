@@ -47,7 +47,7 @@ body {
         top: 35px;
         left: 7.5%;
         transform: translate(-55%,0) rotateY(180deg);
-        background: url("imgs/2.2.jpg");
+        background: url("https://s3.bmp.ovh/imgs/2022/04/15/3ecca7a7d75cea4f.jpg");
         background-size: auto 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -62,7 +62,7 @@ body {
         top: 25px;
         left: 25px;
         transform: translate(-50%,-50%) rotateY(360deg);
-        background: url("imgs/2.2.jpg");
+        background: url("https://s3.bmp.ovh/imgs/2022/04/15/3ecca7a7d75cea4f.jpg");
         background-size: auto 100%;
         background-position: center;
         background-repeat: no-repeat;
