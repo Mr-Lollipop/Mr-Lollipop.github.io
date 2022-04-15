@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.welcome{
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    justify-items: start;
+}
+#img{
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: url("imgs/3.1.jpg");
+    background-color: black;
+    background-size: auto 100%;
+    background-position: center;
+}
+#cloud{
+    position: absolute;
+    background: url("cloud-texture.png");
+    background-color: white;
+    background-size: 100% auto;
+    background-position: center;
+    pointer-events: none;
+    background-repeat: no-repeat;
+}
+@keyframes change{
+    to{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        top: 35px;
+        left: 7.5%;
+        transform: translate(-55%,0) rotateY(180deg);
+        background: url("imgs/2.2.jpg");
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+}
+@keyframes change1{
+    to{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        top: 25px;
+        left: 25px;
+        transform: translate(-50%,-50%) rotateY(360deg);
+        background: url("imgs/2.2.jpg");
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+}
+@keyframes paddingTop{
+    from{
+        padding-top: 0px;
+    }
+    to{
+        padding-top: 180px;
+    }
+}
+@keyframes paddingTop1{
+    from{
+        padding-top: 180px;
+    }
+    to{
+        padding-top: 0px;
+    }
+}
+
+#back{
+    position: absolute;
+    background: url("imgs/background.png");
+    background-color: black;
+    background-size: 100% auto;
+    background-position: center;
+    pointer-events: none;
+}
+
+@keyframes cloud_change{
+    to{
+        background-size: 500% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0;
+    }
+}
+#content{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#div1{
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+#div2{
+    width: 90%;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+#ul{
+    height: auto;
+    width: 100%;
+    position: relative;
+    list-style: none;
+    text-align: center;
+    top: 120px;
+    display: none;
+}
+li{
+    height: 45px;
+    width: 100%;
+    font-size: 1.25em;
+    color: white;
+    line-height: 45px;
+}
+
+.search{
+    width: 80%;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+    padding: 10px;
+    position: relative;
+    top: 100%;
+    transform: translateY(calc(-100% - 50px));
+}   
+.search::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 500px){
+    #content{
+        flex-direction: column;
+    }
+    #div1{
+        width: 100%;
+        min-height: 55px;
+        max-height: 55px;
+    }
+    #div2{
+        width: 100%;
+    }
+    .search{
+        width: calc(100% - 55px);
+        position: absolute;
+        left: 100%;
+        top: 25px;
+        transform: translate(-102%,-50%);
+    }
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.link_txt{
+    width: 100%;
+    height: 100%;
+}
+
+li:hover{
+    background-color: rgb(255, 255, 255, 0.6);
+    color: black;
+}
+iframe{
+    border: none;
+    padding-top: 0px;
+}

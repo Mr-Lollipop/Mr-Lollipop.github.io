@@ -1,0 +1,255 @@
+<html>
+    <head>
+        <title>About Me</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+        <!-- <script type="text/javascript" src="js.js"></script> -->
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            overflow: hidden;
+        }
+        #div0{
+            width: 100%;
+            height: 100%;
+        }
+        #div1{
+            height: 18%;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+        }
+        #over_body{
+            height: 82%;
+            width: 100%;
+            position: absolute;
+            top: 18%;
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+        #div2{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            overflow-x: hidden;
+        }
+        .div3{ 
+            height: 100%;
+            width: calc(80% + 10px);
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            display: flex;
+        }
+        #table1,#table2{
+            width: 100%;
+            height: auto;
+            color: white;  
+            border: none;
+            border-spacing: 5px;
+        }
+        #table2_1{
+            width: 100%;
+            height: auto;
+            color: white;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        #table2_1 td{
+            width: 33.33%;
+            height: 30px;
+            border-spacing: 0;
+            background-color: rgb(0, 0, 0, 0);
+            border-top: 1px rgba(255, 255, 255, 0.2) solid;
+        }
+        #table2_1 td:nth-child(2){
+            border-right: 1px rgba(255, 255, 255, 0.2) solid;
+            border-left: 1px rgba(255, 255, 255, 0.2) solid;
+        }
+        @media only screen and (max-width: 500px) {
+            #div1{
+                height: 10%;
+            }
+            #div2{
+                padding-right: 20px;
+            }
+            #table1,#table2{
+                height: 100%;
+            }
+            .div3{
+                flex-wrap: wrap;
+                width: calc(95% + 10px);
+            }
+            #over_body{
+                height: 90%;
+                top: 10%;
+            }
+        }
+        @media only screen and (min-width: 500px) {
+            .div_r{
+                width: calc(100% - 40px );
+            }
+            #over_body{
+                padding-right: 20px;
+            }
+        }
+        td{
+            width: 100%;
+            height: auto;
+            background-color: rgb(0, 0, 0, 0.2);
+        }
+        h1{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+        }
+        #head_img{
+            background: url('imgs/null1accb396492feb9f.jpg');
+            background-position: center;
+            background-size: auto 100%;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 5px;
+            margin-top: 10px;
+        }
+        h2{
+            text-align: center;
+            margin: 5px;
+        }
+        p{
+            margin: 5px;
+            position: relative;
+            left: 15%;
+        }
+        ul{
+            list-style: none;
+        }
+    </style>
+    <body>
+        <div id="div0">
+            <div id="over_body">
+            <div id="div2">
+                <div class="div3">
+                    <table id="table1">
+                        <tr><td>
+                            <div id="head_img"></div>
+                            <h2>Lollipop</h2>
+                            <p>Phone：173xxxxxxxx</p>
+                            <p>E-mail：139xxxxxxx@qq.com</p>
+                            <p>Adress：四川省宜宾市</p>
+                        </td></tr>
+                        <tr><td>
+                            <h2>荣誉证书</h2>
+                            <p>同声传译(AIIC)</p><p>北美精算师(FSA)</p>
+                            <p>特许金融分析师(CFA)</p><p>特许理财规划师(CFP)</p>
+                            <p>思科认证网络专家(CCIE)</p><p>国际注册会计师(ACCA)</p>
+                            <p>国际注册信息系统审计师(CISA)</p><p>高级国际财务管理师(SIFM)</p>
+                            <p>项目管理专家(PMP)</p><p>美国注册物流师(CTL)</p>
+                        </td></tr>
+                        <tr><td>
+                            <h2>兴趣爱好</h2>
+                            <p>珠穆朗玛峰滑雪</p>
+                            <p>太阳系飞行</p>
+                            <p>太平洋游泳</p>
+                            <p>收藏核武器</p>
+                            <p>时间旅行</p>
+                            <p>月球跳高</p>
+                        </td></tr>
+                    </table>
+                    <table id="table2">
+                        <tr><td>
+                            <h2>教育背景</h2>
+                            <table id="table2_1">
+                                <tr><td>2100-2200</td><td>清华大学</td><td>物联网(本科)</td></tr>
+                                <tr><td>2200-2300</td><td>北京大学</td><td>经济学(研究生)</td></tr>
+                                <tr><td>2300-2400</td><td>复旦大学</td><td>人工智能学(博士)</td></tr>
+                            </table>
+                        </td></tr>
+                        <tr><td>
+                            <h2>校外实践</h2>
+                            <table id="table2_1">
+                                <tr><td>2100-2200</td><td>xxx公司</td><td>销售经理</td></tr>
+                                <tr><td colspan="3">
+                                    <ul>
+                                        <li>2100年销售冠军</li>
+                                        <li>2110年为公司提高50%的收益</li>
+                                        <li>2120年成为公司第一股东</li>
+                                    </ul>
+                                </td></tr>
+                                <tr><td>2200-2300</td><td>xxx公司</td><td>销售经理</td></tr>
+                                <tr><td colspan="3">
+                                    <ul>
+                                        <li>2100年销售冠军</li>
+                                        <li>2110年为公司提高50%的收益</li>
+                                        <li>2120年成为公司第一股东</li>
+                                    </ul>
+                                </td></tr>
+                                <tr><td>2300-2400</td><td>xxx公司</td><td>销售经理</td></tr>
+                                <tr><td colspan="3">
+                                    <ul>
+                                        <li>2100年销售冠军</li>
+                                        <li>2110年为公司提高50%的收益</li>
+                                        <li>2120年成为公司第一股东</li>
+                                    </ul>
+                                </td></tr>
+                            </table>
+                        </td></tr>
+                        <tr><td>
+                            <h2>校内实践</h2>
+                            <table id="table2_1">
+                                <tr><td>2100-2200</td><td>xxx公司</td><td>销售经理</td></tr>
+                                <tr><td colspan="3">
+                                    <ul>
+                                        <li>2100年销售冠军</li>
+                                        <li>2110年为公司提高50%的收益</li>
+                                        <li>2120年成为公司第一股东</li>
+                                    </ul>
+                                </td></tr>
+                                <tr><td>2200-2300</td><td>xxx公司</td><td>销售经理</td></tr>
+                                <tr><td colspan="3">
+                                    <ul>
+                                        <li>2100年销售冠军</li>
+                                        <li>2110年为公司提高50%的收益</li>
+                                        <li>2120年成为公司第一股东</li>
+                                    </ul>
+                                </td></tr>
+                                <tr><td>2300-2400</td><td>xxx公司</td><td>销售经理</td></tr>
+                                <tr><td colspan="3">
+                                    <ul>
+                                        <li>2100年销售冠军</li>
+                                        <li>2110年为公司提高50%的收益</li>
+                                        <li>2120年成为公司第一股东</li>
+                                    </ul>
+                                </td></tr>
+                            </table>
+                        </td></tr>
+                        <tr><td>
+                            <h2>自我评价</h2>
+                            <p style="text-indent: 2em;left: 0;text-align: justify;">本人对工作持用心认真的态度，职责心强，为人诚恳、细心、乐观、稳重，有良好的团队精神，
+                                    能快速适应工作环境，并能在实际工作中不断学习，不断完善自己，做好本职工作。我是一个用心、
+                                    乐观，务实，不断学习，奋力进取的人。不想落后，也不愿落后;落后，失去成功的一切机会。</p>
+                        </td></tr>
+                    </table>
+                </div>
+            </div>
+            </div>
+            <div id="div1">
+                <h1 id="h1">About&nbsp;&nbsp;Me</h1>
+            </div>
+        </div>
+    </body>
+</html>
